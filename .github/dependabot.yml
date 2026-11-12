@@ -3,29 +3,28 @@
 # Please see the documentation for all configuration options:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
-version: 2
-updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "gradle"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    registries: "*"
-    labels: [ "version update" ]
-    groups:
-      kotlin-ksp-compose:
-        patterns:
-          - "org.jetbrains.kotlin:*"
-          - "org.jetbrains.kotlin.jvm"
-          - "com.google.devtools.ksp"
-          - "androidx.compose.compiler:compiler"
-    open-pull-requests-limit: 20
-registries:
-  maven-google:
-    type: "maven-repository"
-    url: "https://maven.google.com"
-    replaces-base: true
-    
+# version: 2
+# updates:
+#   - package-ecosystem: "github-actions"
+#     directory: "/"
+#     schedule:
+#       interval: "daily"
+#   - package-ecosystem: "gradle"
+#     directory: "/"
+#     schedule:
+#       interval: "daily"
+#     registries: "*"
+#     labels: [ "version update" ]
+#     groups:
+#       kotlin-ksp-compose:
+#         patterns:
+#           - "org.jetbrains.kotlin:*"
+#           - "org.jetbrains.kotlin.jvm"
+#           - "com.google.devtools.ksp"
+#           - "androidx.compose.compiler:compiler"
+#     open-pull-requests-limit: 20
+# registries:
+#   maven-google:
+#     type: "maven-repository"
+#     url: "https://maven.google.com"
+#     replaces-base: true
